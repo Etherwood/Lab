@@ -153,3 +153,40 @@ TEST(TestMatrix, Test_div_matrix) {
 	delete[] matrix2;
 	delete[] result;
 }
+TEST(TestMatrix, Test_slpow_matrix) {
+	double** matrix1 = new double* [2];
+	double** matrix2 = new double* [2];
+	double** result = new double* [2];
+	for (int i = 0; i < 2; i++) {
+		matrix1[i] = new double[2];
+		matrix2[i] = new double[2];
+		result[i] = new double[2];
+	}
+	matrix1[0][0] = 4;
+	matrix1[0][1] = 10;
+	matrix1[1][0] = 42;
+	matrix1[1][1] = 60;
+
+	matrix2[0][0] = 4;
+	matrix2[0][1] = 2;
+	matrix2[1][0] = 21;
+	matrix2[1][1] = 20;
+
+	result[0][0] = 20;
+	result[0][1] = 14;
+	result[1][0] = 483;
+	result[1][1] = 460;
+
+	slpow_matrix(matrix1, matrix2, 2);
+
+	EXPECT_EQ(**result, **matrix1);
+
+	for (int i = 0; i < 2; ++i) {
+		delete[] matrix1[i];
+		delete[] matrix2[i];
+		delete[] result[i];
+	}
+	delete[] matrix1;
+	delete[] matrix2;
+	delete[] result;
+}
