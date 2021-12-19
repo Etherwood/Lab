@@ -49,32 +49,36 @@ int main(int argc, const char* argv[]) {
 
 	//сама работа с матрицами
 
-	double** matrix_int_time = new double* [matrix_size];
-	double** matrix_int_data = new double* [matrix_size];
+	double** matrix_int_B = new double* [matrix_size];
+	double** matrix_int_A = new double* [matrix_size];
 	for (int i = 0; i < matrix_size; i++) {
-		matrix_int_time[i] = new double[matrix_size];
-		matrix_int_data[i] = new double[matrix_size];
+		matrix_int_B[i] = new double[matrix_size];
+		matrix_int_A[i] = new double[matrix_size];
 	}
 
-	initialization(matrix_int_time, matrix_int_data, matrix_size);
+	initialization(matrix_int_B, matrix_int_A, matrix_size);
 	
 
-	printf("матрица data: \n");
-	output_matrix(matrix_int_data, matrix_size);
-	printf("матрица time: \n");
-	output_matrix(matrix_int_time, matrix_size);
+	printf("матрица A: \n");
+	output_matrix(matrix_int_A, matrix_size);
+	printf("матрица B: \n");
+	output_matrix(matrix_int_B, matrix_size);
 	printf("Сложение: \n");
-	sum_matrix(matrix_int_data, matrix_int_time, matrix_size);
-	output_matrix(matrix_int_data, matrix_size);
+	sum_matrix(matrix_int_A, matrix_int_B, matrix_size);
+	output_matrix(matrix_int_A, matrix_size);
 	printf("Вычитание: \n");
-	difference_matrix(matrix_int_data, matrix_int_time, matrix_size);
-	output_matrix(matrix_int_data, matrix_size);
+	difference_matrix(matrix_int_A, matrix_int_B, matrix_size);
+	output_matrix(matrix_int_A, matrix_size);
 	printf("Умножение: \n");
-	mult_matrix(matrix_int_data, matrix_int_time, matrix_size);
-	output_matrix(matrix_int_data, matrix_size);
+	mult_matrix(matrix_int_A, matrix_int_B, matrix_size);
+	output_matrix(matrix_int_A, matrix_size);
 	printf("Деление: \n");
-	div_matrix(matrix_int_data, matrix_int_time, matrix_size);
-	output_matrix(matrix_int_data, matrix_size);
+	div_matrix(matrix_int_A, matrix_int_B, matrix_size);
+	output_matrix(matrix_int_A, matrix_size);
+	printf("Сложение с квадратом 2 матрицы: \n");
+	slpow_matrix(matrix_int_A, matrix_int_B, matrix_size);
+	output_matrix(matrix_int_A, matrix_size);
+
 
 	system("pause");
 	return 0;

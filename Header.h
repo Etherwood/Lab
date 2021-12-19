@@ -1,4 +1,4 @@
 #include <iostream>
 #include <ctime>
 
-void initialization(double** matrix_int_time, double** matrix_int_data, int matrix_size);
+void initialization(double** matrix_int_B, double** matrix_int_A, int matrix_size);
