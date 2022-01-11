@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.21)
 
 
-project(ASPM181)
+project(Lab)
 
 
 add_executable(main main.cpp initialization.cpp)
