@@ -1,0 +1,77 @@
+\hypertarget{header__func_8h}{}\doxysection{Файл Math\+\_\+func/header\+\_\+func.h}
+\label{header__func_8h}\index{Math\_func/header\_func.h@{Math\_func/header\_func.h}}
+{\ttfamily \#include $<$iostream$>$}\newline
+\doxysubsection*{Функции}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{header__func_8h_a72f9ccfe9e24b91222b5a26c40691c88}{sum\+\_\+matrix}} (double $\ast$$\ast$matrix\+\_\+int\+\_\+B, double $\ast$$\ast$matrix\+\_\+int\+\_\+A, int matrix\+\_\+size)
+\begin{DoxyCompactList}\small\item\em Функция, считающая сумму матриц. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{header__func_8h_ac56d4cefb2360f6cd64f8c25522aab50}{output\+\_\+matrix}} (double $\ast$$\ast$matrix\+\_\+int\+\_\+A, int matrix\+\_\+size)
+\begin{DoxyCompactList}\small\item\em Функция, считающая произведение матриц. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{header__func_8h_a829c841c7de23e93a8a9044a4d12808e}\label{header__func_8h_a829c841c7de23e93a8a9044a4d12808e}} 
+void {\bfseries difference\+\_\+matrix} (double $\ast$$\ast$matrix\+\_\+sum1, double $\ast$$\ast$matrix\+\_\+sum2, int matrix\+\_\+size)
+\item 
+\mbox{\Hypertarget{header__func_8h_aab2bb074afa5aaebd2094c79960ea3d2}\label{header__func_8h_aab2bb074afa5aaebd2094c79960ea3d2}} 
+void {\bfseries mult\+\_\+matrix} (double $\ast$$\ast$matrix\+\_\+sum1, double $\ast$$\ast$matrix\+\_\+sum2, int matrix\+\_\+size)
+\item 
+\mbox{\Hypertarget{header__func_8h_ac8270be16d15be38c2c137ca513bb52c}\label{header__func_8h_ac8270be16d15be38c2c137ca513bb52c}} 
+void {\bfseries div\+\_\+matrix} (double $\ast$$\ast$matrix\+\_\+sum1, double $\ast$$\ast$matrix\+\_\+sum2, int matrix\+\_\+size)
+\item 
+\mbox{\Hypertarget{header__func_8h_a5c7ecea2d4b7c8723c2af383bd6a675b}\label{header__func_8h_a5c7ecea2d4b7c8723c2af383bd6a675b}} 
+void {\bfseries slpow\+\_\+matrix} (double $\ast$$\ast$matrix\+\_\+sum1, double $\ast$$\ast$matrix\+\_\+sum2, int matrix\+\_\+size)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Заголовочный файл для функции перемножения матриц. 
+
+\doxysubsection{Функции}
+\mbox{\Hypertarget{header__func_8h_ac56d4cefb2360f6cd64f8c25522aab50}\label{header__func_8h_ac56d4cefb2360f6cd64f8c25522aab50}} 
+\index{header\_func.h@{header\_func.h}!output\_matrix@{output\_matrix}}
+\index{output\_matrix@{output\_matrix}!header\_func.h@{header\_func.h}}
+\doxysubsubsection{\texorpdfstring{output\_matrix()}{output\_matrix()}}
+{\footnotesize\ttfamily void output\+\_\+matrix (\begin{DoxyParamCaption}\item[{double $\ast$$\ast$}]{matrix\+\_\+int\+\_\+A,  }\item[{int}]{matrix\+\_\+size }\end{DoxyParamCaption})}
+
+
+
+Функция, считающая произведение матриц. 
+
+Функция возвращает матрицу, равную произведению матриц. 
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{ out}}  & {\em matrix\+\_\+sum1} & матрица к которой прибавляется значение второй матрицы matrix\+\_\+sum2 \\
+\hline
+\mbox{\texttt{ in}}  & {\em matrix\+\_\+size} & количество строк матрицы \\
+\hline
+\mbox{\texttt{ in}}  & {\em ma} & количество столбцов матрицы А \\
+\hline
+\mbox{\texttt{ in}}  & {\em b} & вторая матрица B \\
+\hline
+\mbox{\texttt{ in}}  & {\em nb} & количество строк матрицы B \\
+\hline
+\mbox{\texttt{ in}}  & {\em mb} & количество столбцов матрицы B \\
+\hline
+\mbox{\texttt{ out}}  & {\em nr} & количество строк матрицы B \\
+\hline
+\mbox{\texttt{ out}}  & {\em mr} & количество столбцов матрицы B\\
+\hline
+\end{DoxyParams}
+Функция, считающая произведение матриц. \mbox{\Hypertarget{header__func_8h_a72f9ccfe9e24b91222b5a26c40691c88}\label{header__func_8h_a72f9ccfe9e24b91222b5a26c40691c88}} 
+\index{header\_func.h@{header\_func.h}!sum\_matrix@{sum\_matrix}}
+\index{sum\_matrix@{sum\_matrix}!header\_func.h@{header\_func.h}}
+\doxysubsubsection{\texorpdfstring{sum\_matrix()}{sum\_matrix()}}
+{\footnotesize\ttfamily void sum\+\_\+matrix (\begin{DoxyParamCaption}\item[{double $\ast$$\ast$}]{matrix\+\_\+sum1,  }\item[{double $\ast$$\ast$}]{matrix\+\_\+sum2,  }\item[{int}]{matrix\+\_\+size }\end{DoxyParamCaption})}
+
+
+
+Функция, считающая сумму матриц. 
+
+Функция возвращает матрицу, равную произведению матриц. 
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{ out}}  & {\em matrix\+\_\+int\+\_\+B} & матрица к которой прибавляется значение второй матрицы matrix\+\_\+sum2 \\
+\hline
+\mbox{\texttt{ in}}  & {\em matrix\+\_\+int\+\_\+A} & вторая матрица \\
+\hline
+\mbox{\texttt{ in}}  & {\em matrix\+\_\+size} & размер матрицы\\
+\hline
+\end{DoxyParams}
+Функция, считающая сумму матриц. 
